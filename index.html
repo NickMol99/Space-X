@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>SpaceX Dashboard</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Interplanetary
+                Transport
+                System</h1>
+            <p>Welcome traveler, here you will 
+                find all available information 
+                about this space shuttle</p>
+        </div>
+        <div>
+            <img src="images/spaceshuttle.png" class="first">
+            <img src="images/spaceshuttle_v2.png" class="second">
+        </div>
+    </header>
+    <main>
+        <article>
+            <h3>Space Shuttle</h3>
+            <canvas id="myChartSpaceShuttle" width="200" height="200"></canvas>
+        </article>
+        <article>
+            <h3>Surroundings</h3>
+            <canvas id="myChartSurroundings" width="200" height="200"></canvas>
+        </article>
+        <article>
+            <h3>Stocks</h3>
+            <canvas id="myChartStocks" width="200" height="200"></canvas>
+        </article>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

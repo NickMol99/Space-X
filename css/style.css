@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+body {
+    background-color: #150C25;
+    color: #fff;
+    font-family: 'exo 2', sans-serif;
+    padding: 1em 2em;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 35px;
+}
+h1:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #341D5C;
+    position: absolute;
+    margin-top: 0.5em;
+}
+p {
+    margin: 2.3em 0em 5em 0em;
+    font-size: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+header div:nth-child(2) {
+    display: none;
+}
+main article {
+    background-color: #341D5C;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1024px){
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header div:nth-child(2) {
+        display: block;
+        text-align: center;
+    }
+    .second {
+        display: none;
+    }
+    .first {
+        width: 60%;
+        margin-top: 3em;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h1:after {
+        height: 7px;
+        margin-top: 1em;
+    }
+    p {
+        font-size: 25px;
+        margin-top: 4em;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -5em;
+    }
+    main article:nth-child(2) {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    body {
+        padding: 5em 10em;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h1:after {
+        width: 200px;
+        height: 10px;
+        margin-top: 1em;
+    }
+    p {
+        margin-top: 2.7em;
+    }
+    p, h3 {
+        font-size: 50px;
+    }
+    header div:nth-child(2){
+        z-index: -1;
+        text-align: right;
+    }
+    .first {
+        display: none;
+    }
+    .second {
+        display: block;
+        position: absolute;
+        width: 35%;
+        right: 0%;
+    }
+    main {
+        margin-top: -10em;
+    }
+}
